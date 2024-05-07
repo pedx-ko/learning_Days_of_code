@@ -6,7 +6,7 @@ As a novice to Python, I'm excited to delve into the fundamentals of this powerf
 
 Throughout this adventure, I'll be documenting my learnings, challenges, and accomplishments. Join me as I navigate the world of Python, one step at a time!
 
-## 100 Days of Code: The Complete Python Pro Bootcamp
+### 100 Days of Code: The Complete Python Pro Bootcamp
 
 This document will serve as a guide for completing the "100 Days of Code: The Complete Python Pro Bootcamp" course. 
 
