@@ -1,0 +1,26 @@
+usé estas funciones para hacer 
+
+def turn_rigth():
+    turn_left()
+    turn_left()
+    turn_left()
+'''
+def turn_around():
+    turn_rigth()
+    turn_left()''' # no esta parte
+
+def jump():
+    turn_left()
+    move()
+    turn_rigth()
+    move()
+    turn_rigth()
+    move()
+    turn_left()
+    
+while not at_goal():
+    while wall_in_front():
+        jump()
+    move()
+    while wall_in_front():
+       jump()
