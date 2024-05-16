@@ -1,0 +1,43 @@
+my solution:
+
+
+
+def turn_rigth():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def turn_around():
+    turn_rigth()
+    turn_left()
+
+def w_in_R():
+    while wall_on_right() and front_is_clear():
+        move()
+
+def jump():
+    turn_left()
+    w_in_R()
+    turn_rigth()
+    move()
+    turn_rigth()
+    move()
+    w_in_R()
+    turn_left()
+    
+while not at_goal():
+    if front_is_clear():
+        move()
+    if wall_in_front():
+        jump()
+    else:
+        while not wall_on_right() and front_is_clear():
+            move()
+
+ 
+
+
+
+
+
+    
