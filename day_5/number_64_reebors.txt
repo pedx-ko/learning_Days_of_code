@@ -4,23 +4,26 @@ def turn_rigth():
     turn_left()
     turn_left()
     turn_left()
-'''
-def turn_around():
-    turn_rigth()
-    turn_left()''' # no esta parte
+
+
+def w_in_R():
+    while wall_on_rigth() and front_is_clear():
+        move()
 
 def jump():
     turn_left()
-    move()
+    def w_in_R()
     turn_rigth()
     move()
     turn_rigth()
-    move()
+    def w_in_R()
     turn_left()
     
 while not at_goal():
-    while wall_in_front():
+    if wall_in_front():
         jump()
-    move()
-    while wall_in_front():
-       jump()
+    else:
+        while not wall_on_rigth() and front_is_clear():
+            move()
+
+
