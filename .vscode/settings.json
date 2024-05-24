@@ -1,7 +1,5 @@
 {
-    "editor.tabSize": 4,
-    "editor.rulers": [
-        
-        95
-    ]
+  "editor.tabSize": 4,
+  "editor.rulers": [95],
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }

@@ -10,11 +10,12 @@ class Persona:
         return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años"
 
 
-
-
 juan = Persona("Juan", randint(25, 60))
-Marta = Persona("Marta",randint(20,60))
+Marta = Persona("Marta", randint(20, 60))
 
 print(juan.saludar())
 print("")
 print(Marta.saludar())
+'''ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+ssssssss '''
