@@ -7,11 +7,11 @@ import random
 from imagg import stages, Intro_im, game_over
 
 again = 1
-print(Intro_im)
 while again == 1:
     os.system('cls')  # Call the clear() function to clear the console
-    words_list = ["mak silvester", "mari mar",
-                  "apple banana", "cherry", "grape mango"]
+    print(Intro_im)
+    words_list = ["mak", "silvester", "mari", "mar",
+                  "apple", "banana", "cherry", "grape", "mango"]
 
     random_word = random.choice(words_list)
     # no_spaces = random_word.replace(" ", "")
@@ -27,16 +27,16 @@ while again == 1:
     # # TODO look if a letter--done
     # print("########### WELLL CCOOOMEE ########### \n")
     while lives_on > 0:
-        print()
+        # print()
         # print(random_word)
         print()
         input_word = input("\nSelect a word: ").lower()
 
-        print()
-        print(f"{spaces}\n")
+        # print()
+        # print(f"{spaces}\n")
 
         os.system('cls')  # Call the clear() function to clear the console
-        print(spaces.count("_"))
+        # print(spaces.count("_"))
 
         # if spaces.count("_") > 0:
         if input_word not in spaces.lower():
@@ -47,16 +47,17 @@ while again == 1:
                         spaces[i] = random_word[i]
                         # convert in to a strig to prin it
                         spaces = "".join([i for i in spaces])
-                print(f"\n \n♥ LIFE = {lives_on} \n")
-                print(spaces)
+                print(f"\n \n♥ LIvES ♥ = {lives_on} \n")
                 if spaces.count("_") <= 0:
                     # Call the clear() function to clear the console
-                    os.system('cls')
-                    print("\n\nYOU Win\n\n")
+                    # os.system('cls')
+                    print(spaces)
+                    print("\nYOU Win\n")
                     break
+                print(spaces)
             else:
                 lives_on -= 1
-                print(f"\n \n♥ LIFE = {lives_on}\n ")
+                print(f"\n \n♥ LIvES ♥ = {lives_on}\n ")
                 print(stages[lives_on])
                 print(spaces)
         else:
