@@ -15,7 +15,7 @@ while again == 1:
 
     random_word = random.choice(words_list)
     # no_spaces = random_word.replace(" ", "")
-    random_word = words_list[3]
+    # random_word = words_list[3]
     spaces_on = len(random_word)
     lives_on = 6
 
@@ -28,7 +28,7 @@ while again == 1:
     # print("########### WELLL CCOOOMEE ########### \n")
     while lives_on > 0:
         print()
-        print(random_word)
+        # print(random_word)
         print()
         input_word = input("\nSelect a word: ").lower()
 
