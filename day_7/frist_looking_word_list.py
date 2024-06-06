@@ -6,11 +6,11 @@ import random
 from imagg import stages, Intro_im, game_over
 
 again = 1
+words_list = ["mak", "silvester", "mari", "mar",
+              "apple", "banana", "cherry", "grape", "mango"]
 while again == 1:
     os.system('cls')  # Call the clear() function to clear the console
     print(Intro_im)
-    words_list = ["mak", "silvester", "mari", "mar",
-                  "apple", "banana", "cherry", "grape", "mango"]
 
     random_word = random.choice(words_list)
     # no_spaces = random_word.replace(" ", "")
@@ -29,7 +29,8 @@ while again == 1:
         # print()
         # print(random_word)
         print()
-        input_word = input("\nSelect a word: ").lower()
+        input_word = input(
+            "\nPlease Select a Leter then push 'Enter': ").lower()
 
         # print()
         # print(f"{spaces}\n")
@@ -60,7 +61,7 @@ while again == 1:
                 print(stages[lives_on])
                 print(spaces)
         else:
-            print("\n Is allready there try again")
+            print("\nIt is allready there try again")
 
     if lives_on <= 0:
         os.system('cls')  # Call the clear() function to clear the console
@@ -71,11 +72,12 @@ while again == 1:
     # sleep()
     trata = True
     while trata:
-        choise = input("\nIf want to try again '1'  if not '0' \n")
+        choise = input(
+            "\nIf want to try again the number '1'  if not number '0' \n")
         if choise == "1" or choise == "0":
             trata = False
         else:
-            print("\n\nplease try to select a good answer \n\n")
+            print("\n\nPlease try to select a good answer \n\n")
             sleep(2)
             os.system('cls')  # Call the clear() function to clear the console
     again = int(choise)
