@@ -27,14 +27,20 @@
 
 
 '''testing code profe'''
-for number in range(1, 8):
-    print(number)
+
+tra = []
+for number in range(1, 901):
+    is_prime = True
+    # print(number)
     for i in range(2, number):
-        x = True
-        if i % i == 0:
-            x = False
+        # x = True
+        if number % i == 0:
+            is_prime = False
             # print("no")
-        if x:
-            print(f"{i} PRime\n")
-        else:
-            print(f"{i} no prime\n")
+    if is_prime:
+        print(f"\n{number} PRime\n")
+        tra.append(number)
+    else:
+        print(f"\n{number} no prime\n")
+
+print(len(tra))
