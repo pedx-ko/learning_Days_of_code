@@ -80,23 +80,24 @@ while asking:
                 sleep(3)
                 os.system('cls')
 
+        otra = True
+        while otra:
+            try:
+                agan = int(
+                    input("\nDo you want to try again if yes put:'1' if no: '2'\n"))
+                otra = False
+                if agan == 1 or agan == 2:
+                    os.system('cls')
+                    if agan == 1:
+                        asking = True
+                    elif agan == 2:
+                        asking = False
+                else:
+                    print("vaule must be '1' or '2'")
+                    otra = False
+            except ValueError:
+                print("\nplease give a good answer\n")
+                sleep(3)
+                os.system('cls')
     else:
         os.system('cls')
-    otra = True
-    while otra:
-        try:
-            agan = int(input("Try again '1' no '2'\n"))
-            otra = False
-            if agan == 1 or agan == 2:
-                os.system('cls')
-                if agan == 1:
-                    asking = True
-                elif agan == 2:
-                    asking = False
-            else:
-                print("vaule must be '1' or '2'")
-                otra = False
-        except ValueError:
-            print("\nplease give a good answer\n")
-            sleep(3)
-            os.system('cls')
