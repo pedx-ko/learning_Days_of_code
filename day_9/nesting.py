@@ -23,7 +23,7 @@ travel_info = {
 
 
 travel_info.update({'New Paris': travel_info.pop('Paris')})
-travel_info = list(travel_info)
+travel_info 
 # sorted(travel_info.items())
 
 print((travel_info))
