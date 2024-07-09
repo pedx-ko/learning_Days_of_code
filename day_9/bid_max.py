@@ -16,8 +16,8 @@ while more_p:
     trato = True
     while trato:
         try:
-            # bid = int(input("put you bid in numbers: "))
-            bid = random.randint(1, 500)
+            bid = int(input("put you bid in numbers: "))
+            # bid = random.randint(1, 500)
             trato = False
         except ValueError:
             print("Please provide a good data")
@@ -43,4 +43,4 @@ for bides in List_of_participant:
         winner = bides["name"]
 
 print(
-    f"\n The winner is {winner.capitalize()} with the the bid : {maximmales}$")
+    f"\n The winner is {winner.capitalize()} with the bid : {maximmales}$")
