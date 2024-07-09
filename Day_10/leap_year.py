@@ -1,3 +1,4 @@
+from calendar import month
 import random
 
 
@@ -36,14 +37,19 @@ def day_in_month(year, month):
 start = 1900
 stop = 2040
 
-for i in range(start, stop):
-    # print(i)
-    year = int(i)  # enter a year
-    month = int(2)  # enter a month
-    days = day_in_month(year, month)
-    if days > 28:
-        print(i)
-        print(days)
+year = int(input('\nPlease enter the desired year: '))
+monat = int(input("\nPlease enter the desired month: "))
+
+days = day_in_month(year, monat)
+
+# for i in range(start, stop):
+#     # print(i)
+#     year = int(i)  # enter a year
+#     month = int(2)  # enter a month
+#     days = day_in_month(year, month)
+#     if days > 28:
+# print(i)
+print(f"\nnumber of days is: {days}")
 
 
 # -----------------simpler method
